@@ -1,5 +1,16 @@
+import styled from "styled-components";
+
 const About = () => {
-    return <div>About</div>
-}
+  return (
+    <Wrapper>
+      About Me
+    </Wrapper>
+  );
+};
 
 export default About;
+
+const Wrapper = styled.section`
+  height: 100vh;
+  position: relative;
+`;

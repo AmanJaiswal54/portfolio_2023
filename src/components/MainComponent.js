@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Header from "./Header/Header";
+import Introduction from "./Introduction/Introduction";
 import About from "./About/About";
 import Project from "./Project/Project";
 import Contact from "./Contact/Contact";
@@ -8,11 +9,14 @@ import Footer from "./Footer/Footer";
 const MainComponent = () => {
   return (
     <Wrapper>
-      <Header></Header>
-      <About></About>
-      {/* <Project></Project>
-      <Contact></Contact>
-      <Footer></Footer> */}
+      <Header />
+      <BodyContainer>
+        <Introduction />
+        <About />
+        {/* <Project></Project> */}
+        {/* <Contact></Contact> */}
+        {/* <Footer></Footer> */}
+      </BodyContainer>
     </Wrapper>
   );
 };
@@ -24,5 +28,10 @@ const Wrapper = styled.div`
   flex-direction: column;
   color: #2d2e32;
   font-weight: 600;
-  font-family: Poppins,sans-serif;
+  font-family: Poppins, sans-serif;
+`;
+
+const BodyContainer = styled.div`
+  margin: auto;
+  width: 90%;
 `;
