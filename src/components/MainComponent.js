@@ -13,7 +13,7 @@ const MainComponent = () => {
       <BodyContainer>
         <Introduction />
         <About />
-        {/* <Project></Project> */}
+        <Project />
         <Contact/>
       </BodyContainer>
       <Footer/>

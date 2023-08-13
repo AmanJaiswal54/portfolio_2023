@@ -4,7 +4,7 @@ import Github from "../../utils/images/github.svg";
 
 const Footer = () => {
   return (
-    <Wrapper>
+    <Wrapper className="footer">
       <CopyrightWrapper>
         Copyright © 2023. All rights are reserved
       </CopyrightWrapper>

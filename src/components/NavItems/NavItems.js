@@ -1,12 +1,27 @@
 import styled from "styled-components";
+import { NavigationItems } from "../../utils/constant";
 
 const NavItems = () => {
+  const navClickHandler = (event) => {
+    document
+      .querySelector(`.${event.target.innerHTML}`)
+      .scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <NavItemsWrapper>
-      <NavItem>Home</NavItem>
-      <NavItem>About</NavItem>
-      <NavItem>Projects</NavItem>
-      <NavItem>Contact</NavItem>
+      {NavigationItems.map((item) => {
+        return (
+          <NavItem
+            key={item}
+            onClick={(e) => {
+              navClickHandler(e);
+            }}
+          >
+            {item}
+          </NavItem>
+        );
+      })}
     </NavItemsWrapper>
   );
 };
@@ -23,4 +38,6 @@ const NavItemsWrapper = styled.ul`
 const NavItem = styled.li`
   margin: 20px;
   font-size: 16px;
+  cursor: pointer;
+  text-transform: capitalize;
 `;

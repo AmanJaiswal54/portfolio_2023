@@ -5,7 +5,7 @@ import React from "../../utils/images/reactlogo.svg";
 
 const About = () => {
   return (
-    <Wrapper>
+    <Wrapper className="about">
       <ProfilePictureWrapper>
         <img
           src={Programmer}
@@ -50,7 +50,6 @@ const Wrapper = styled.section`
   position: relative;
   display: flex;
   align-items: center;
-  padding-top: 100px;
 `;
 
 const AboutDescriptionWrapper = styled.div`

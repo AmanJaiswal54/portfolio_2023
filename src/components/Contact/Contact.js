@@ -4,7 +4,7 @@ import Mail from "../../utils/images/mail.svg";
 
 const Contact = () => {
   return (
-    <Wrapper>
+    <Wrapper className="contact">
       <AboutDescriptionWrapper>
         <Title>Contact</Title>
         <Subtitle>Don't be shy! Hit me up! 👇</Subtitle>

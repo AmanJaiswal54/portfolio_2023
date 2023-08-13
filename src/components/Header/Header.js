@@ -4,9 +4,9 @@ import NavItems from "../NavItems/NavItems";
 
 const Header = () => {
   return (
-    <Wrapper>
-      <Logo>Logo</Logo>
-      <NavItems></NavItems>
+    <Wrapper className="header">
+      <Logo/>
+      <NavItems/>
     </Wrapper>
   );
 };

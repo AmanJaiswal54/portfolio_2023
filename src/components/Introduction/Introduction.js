@@ -10,7 +10,7 @@ import Profile from "../../utils/images/profile.jpg";
 
 const Introduction = () => {
   return (
-    <Wrapper>
+    <Wrapper className="home">
       <HorizontalContainer>
         <AboutDescriptionWrapper>
           <Title>Front-End Javascript, React Developer</Title>
