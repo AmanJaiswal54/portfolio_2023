@@ -13,9 +13,7 @@ const Introduction = () => {
     <Wrapper>
       <HorizontalContainer>
         <AboutDescriptionWrapper>
-          <Title>
-            Front-End Javascript, React Developer
-          </Title>
+          <Title>Front-End Javascript, React Developer</Title>
           <Description>
             Hi, I'm Aman Jaiswal. A passionate Front-end Javascript, React
             Developer based in Pune, India. 📍
@@ -38,10 +36,19 @@ const Introduction = () => {
             </Skill>
           </SkillsWrapper>
         </AboutDescriptionWrapper>
-        <ProfilePictureWrapper><img src={Profile} style={{width: "60%", borderRadius:"50%"}}/></ProfilePictureWrapper>
+        <ProfilePictureWrapper>
+          <img
+            src={Profile}
+            style={{
+              width: "60%",
+              borderRadius: "50%",
+              filter: "drop-shadow(10px 10px 10px gray)",
+            }}
+          />
+        </ProfilePictureWrapper>
       </HorizontalContainer>
       <TechStackWrapper>
-        <TechTitle>Tech Stack |</TechTitle>
+        <TechTitle>Tech Stack</TechTitle>
         <SkillsWrapper>
           <Skill>
             <SkillImage title="Javascript" src={Javascript} />
@@ -95,10 +102,10 @@ const Description = styled.p`
   line-height: 1.6;
 `;
 
-const SocialMedia = styled.div``;
-
 const ProfilePictureWrapper = styled.div`
   width: 50%;
+  display: flex;
+  justify-content: center;
 `;
 
 const TechStackWrapper = styled.div`
@@ -107,7 +114,10 @@ const TechStackWrapper = styled.div`
   margin-left: 50px;
 `;
 
-const TechTitle = styled.div``;
+const TechTitle = styled.div`
+  border-right: 2px solid rgba(45, 46, 50, 0.5);
+  padding-right: 20px;
+`;
 
 const SkillsWrapper = styled.ul`
   display: flex;
