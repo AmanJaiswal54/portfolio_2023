@@ -14,9 +14,9 @@ const MainComponent = () => {
         <Introduction />
         <About />
         {/* <Project></Project> */}
-        {/* <Contact></Contact> */}
-        {/* <Footer></Footer> */}
+        <Contact/>
       </BodyContainer>
+      <Footer/>
     </Wrapper>
   );
 };

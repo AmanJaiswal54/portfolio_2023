@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.09);
   position: fixed;
   z-index: 200;
   background: white;

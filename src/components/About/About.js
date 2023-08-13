@@ -1,19 +1,27 @@
 import styled from "styled-components";
 import React from "../../utils/images/react.svg";
-import Profile from "../../utils/images/profile.jpg";
+import Programmer from "../../utils/images/programmer.svg";
+import React from "../../utils/images/reactlogo.svg";
 
 const About = () => {
   return (
     <Wrapper>
       <ProfilePictureWrapper>
         <img
-          src={Profile}
+          src={Programmer}
           style={{
-            width: "60%",
-            borderRadius: "50%",
+            width: "50%",
             filter: "drop-shadow(10px 10px 10px gray)",
           }}
         />
+        {/* <img
+          src={React}
+          style={{
+            width: "50%",
+            animation: "rotate 9s linear infinite",
+            filter: "drop-shadow(10px 10px 10px gray)",
+          }}
+        /> */}
       </ProfilePictureWrapper>
       <AboutDescriptionWrapper>
         <Title>About Me</Title>

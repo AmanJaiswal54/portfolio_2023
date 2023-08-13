@@ -132,7 +132,7 @@ const Skill = styled.li`
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.09);
   cursor: pointer;
   display: flex;
 `;
