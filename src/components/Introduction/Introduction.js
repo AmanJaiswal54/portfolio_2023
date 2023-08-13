@@ -1,12 +1,8 @@
 import styled from "styled-components";
-import Tailwind from "../../utils/images/tailwind.svg";
-import CSS from "../../utils/images/css.svg";
-import HTML from "../../utils/images/html.svg";
-import React from "../../utils/images/react.svg";
-import Javascript from "../../utils/images/javascript.svg";
 import Linkedin from "../../utils/images/linkedin.svg";
 import Github from "../../utils/images/github.svg";
 import Profile from "../../utils/images/profile.jpg";
+import { TechImages } from "../../utils/constant";
 
 const Introduction = () => {
   return (
@@ -50,21 +46,16 @@ const Introduction = () => {
       <TechStackWrapper>
         <TechTitle>Tech Stack</TechTitle>
         <SkillsWrapper>
-          <Skill>
-            <SkillImage title="Javascript" src={Javascript} />
-          </Skill>
-          <Skill>
-            <SkillImage title="React" src={React} />
-          </Skill>
-          <Skill>
-            <SkillImage title="HTML" src={HTML} />
-          </Skill>
-          <Skill>
-            <SkillImage title="CSS" src={CSS} />
-          </Skill>
-          <Skill>
-            <SkillImage title="Tailwind" src={Tailwind} />
-          </Skill>
+          {TechImages.map((obj) => {
+            return (
+              <Skill>
+                <SkillImage
+                  title={Object.keys(obj)[0]}
+                  src={Object.values(obj)[0]}
+                />
+              </Skill>
+            );
+          })}
         </SkillsWrapper>
       </TechStackWrapper>
     </Wrapper>

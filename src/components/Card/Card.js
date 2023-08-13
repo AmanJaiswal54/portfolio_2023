@@ -1,18 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import Singtel from "../../utils/images/singtelAccessories.png";
-import Optus from "../../utils/images/optusMobile.png";
-import DBSBank from "../../utils/images/dbsBank.png";
+import { ProjectImages } from "../../utils/constant";
 
 const Card = (props) => {
   const { card } = props;
   const { title, description, technology, url, imageNumber } = card;
 
-  const Images = [DBSBank, Singtel, Optus];
-
   const clickHandler = () => {
     window.location.href = url;
   };
+
   return (
     <CardWrapper>
       <DetailsWrapper>
@@ -35,7 +32,7 @@ const Card = (props) => {
           onClick={() => {
             clickHandler();
           }}
-          src={Images[imageNumber]}
+          src={ProjectImages[imageNumber]}
         />
       </ImageWrapper>
     </CardWrapper>
