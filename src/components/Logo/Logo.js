@@ -1,10 +1,22 @@
 import styled from "styled-components";
 
 const Logo = () => {
-    return <Wrapper>
-        <span>Aman.dev</span>
+  const navClickHandler = (nav) => {
+    document.querySelector(`.${nav}`).scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <Wrapper>
+      <span
+        onClick={() => {
+          navClickHandler("home");
+        }}
+      >
+        Aman.dev
+      </span>
     </Wrapper>
-}
+  );
+};
 
 export default Logo;
 
