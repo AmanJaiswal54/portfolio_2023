@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { NavigationItems } from "../../utils/constant";
+import { NavLink } from "react-router-dom";
 
 const NavItems = () => {
   const navClickHandler = (event) => {
@@ -22,6 +23,7 @@ const NavItems = () => {
           </NavItem>
         );
       })}
+      <NavItem><NavLink to="/hidden-gems" style={{display: "none"}}>Questions</NavLink></NavItem>
     </NavItemsWrapper>
   );
 };
@@ -40,4 +42,5 @@ const NavItem = styled.li`
   font-size: 16px;
   cursor: pointer;
   text-transform: capitalize;
+  text-decoration: none;
 `;
