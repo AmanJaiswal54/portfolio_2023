@@ -16,6 +16,9 @@
     "portfolio",
     "react"
   ],
+  "browserslist": [
+    "defaults"
+  ],
   "author": "aman jaiswal",
   "license": "ISC",
   "bugs": {
@@ -23,6 +26,7 @@
   },
   "homepage": "https://github.com/AmanJaiswal54/portfolio_2023#readme",
   "dependencies": {
+    "browserslist": "^4.21.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^6.0.7"
