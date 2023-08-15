@@ -7,6 +7,8 @@ import Project from "./src/components/Project/Project";
 import Contact from "./src/components/Contact/Contact";
 import HiddenInterviewQues from "./src/components/HiddenInterviewQues/HiddenInterviewQues";
 import InfiniteScroll from "./src/utils/interviewQuestions/InfiniteScroll";
+import IntersectObserver from "./src/utils/interviewQuestions/IntersectObserver";
+import ObserverResize from "./src/utils/interviewQuestions/ObserverResize";
 
 // const div = document.createElement("div");
 // div.innerHTML = "HELLO World From JS";
@@ -56,6 +58,12 @@ let router = createBrowserRouter([
     path: "/infinite-scroll",
     element: <InfiniteScroll />,
   },
+  {
+    path: "/intersection-observer",
+    element: <IntersectObserver />,
+  },
+  {path: "resize-observer",
+element: <ObserverResize />,}
 ]);
 
 const rootReact = ReactDOM.createRoot(root);

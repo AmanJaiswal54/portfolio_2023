@@ -9,6 +9,16 @@ const HiddenInterviewQues = () => {
             Infinite Scroll Using Scroll Event Listener
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/intersection-observer">
+          Intersection Observer basic example
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/resize-observer">
+          Resize Observer basic example
+          </NavLink>
+        </li>
       </ul>
     </div>
   );

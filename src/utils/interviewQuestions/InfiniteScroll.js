@@ -22,5 +22,5 @@ export default InfiniteScroll = () => {
     };
   }, []);
 
-  return <QuestionFragment>{listItems}</QuestionFragment>;
+  return <QuestionFragment><div>Infinite Scroll</div>{listItems}</QuestionFragment>;
 };
