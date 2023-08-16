@@ -9,6 +9,7 @@ import HiddenInterviewQues from "./src/components/HiddenInterviewQues/HiddenInte
 import InfiniteScroll from "./src/utils/interviewQuestions/InfiniteScroll";
 import IntersectObserver from "./src/utils/interviewQuestions/IntersectObserver";
 import ObserverResize from "./src/utils/interviewQuestions/ObserverResize";
+import CustomJavascriptEvent from "./src/utils/interviewQuestions/CustomJavascriptEvent";
 
 // const div = document.createElement("div");
 // div.innerHTML = "HELLO World From JS";
@@ -62,8 +63,8 @@ let router = createBrowserRouter([
     path: "/intersection-observer",
     element: <IntersectObserver />,
   },
-  {path: "resize-observer",
-element: <ObserverResize />,}
+  { path: "/resize-observer", element: <ObserverResize /> },
+  { path: "/custom-event", element: <CustomJavascriptEvent /> },
 ]);
 
 const rootReact = ReactDOM.createRoot(root);

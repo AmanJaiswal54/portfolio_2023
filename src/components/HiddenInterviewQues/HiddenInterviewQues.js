@@ -19,6 +19,11 @@ const HiddenInterviewQues = () => {
           Resize Observer basic example
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/custom-event">
+          Custom Javascript Event Creation
+          </NavLink>
+        </li>
       </ul>
     </div>
   );
