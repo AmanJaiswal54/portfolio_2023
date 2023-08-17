@@ -24,6 +24,11 @@ const HiddenInterviewQues = () => {
           Custom Javascript Event Creation
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/custom-event-2">
+          Custom Javascript Event Creation 2
+          </NavLink>
+        </li>
       </ul>
     </div>
   );

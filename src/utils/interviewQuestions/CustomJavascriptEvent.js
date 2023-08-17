@@ -5,6 +5,12 @@ const CustomJavascriptEvent = () => {
   useEffect(() => {
     const button = document.querySelector(".double-click");
 
+    button && button.addEventListener("custom:doubleClick", (e) =>{
+      console.log('clickWaitTime', e.detail.clickWaitTime);
+      button.innerHTML = 'custom double click is working'
+    });
+
+
     let last_click = 0;
     let waitTime = 500;
     button && button.addEventListener("click", (e) => {
