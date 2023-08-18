@@ -43,4 +43,7 @@ const NavItem = styled.li`
   cursor: pointer;
   text-transform: capitalize;
   text-decoration: none;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;

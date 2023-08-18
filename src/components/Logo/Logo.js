@@ -7,13 +7,13 @@ const Logo = () => {
 
   return (
     <Wrapper>
-      <span
+      <Span
         onClick={() => {
           navClickHandler("home");
         }}
       >
         Aman.dev
-      </span>
+      </Span>
     </Wrapper>
   );
 };
@@ -26,4 +26,13 @@ const Wrapper = styled.div`
   margin-left: 70px;
   font-size: 20px;
   cursor: pointer;
+`;
+
+const Span = styled.span`
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
