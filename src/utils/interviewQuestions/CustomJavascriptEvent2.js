@@ -8,9 +8,10 @@ const CustomJavascriptEvent2 = () => {
 
     const custom = new CustomEvent("custom:setText", {
       detail: "xyz",
+      bubbles: true, // bubble:true will help us to listen custom event at document
     });
 
-    button.addEventListener("custom:setText", (e) => {
+    document.addEventListener("custom:setText", (e) => {
       console.log("e", e.detail);
       textDiv.innerHTML = e.detail;
     });
