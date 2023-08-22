@@ -30,6 +30,11 @@ const HiddenInterviewQues = () => {
             Solar System Sun, Earth, Moon CSS
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/main-thread-block">
+            Blocking Main Thread Using Javascript Date WEB API
+          </NavLink>
+        </li>
       </ul>
     </div>
   );

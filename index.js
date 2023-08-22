@@ -12,6 +12,7 @@ import ObserverResize from "./src/utils/interviewQuestions/ObserverResize";
 import CustomJavascriptEvent from "./src/utils/interviewQuestions/CustomJavascriptEvent";
 import CustomJavascriptEvent2 from "./src/utils/interviewQuestions/CustomJavascriptEvent2";
 import SolarSystemCSS from "./src/utils/interviewQuestions/SolarSystemCSS";
+import BlockingMainThreadUsingDateAPI from "./src/utils/interviewQuestions/BlockingMainThreadUsingDateAPI";
 
 // const div = document.createElement("div");
 // div.innerHTML = "HELLO World From JS";
@@ -71,6 +72,10 @@ let router = createBrowserRouter([
   {
     path: "/solar-system",
     element: <SolarSystemCSS />,
+  },
+  {
+    path: "/main-thread-block",
+    element: <BlockingMainThreadUsingDateAPI />,
   },
 ]);
 
