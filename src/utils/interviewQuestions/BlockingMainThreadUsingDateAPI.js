@@ -4,20 +4,22 @@ import { styled } from "styled-components";
 
 const BlockingMainThreadUsingDateAPI = () => {
   useEffect(() => {
-    // simulate code to block main thread for 10 seconds
-    let startTime = new Date().getTime();
-    let endTime = startTime;
-    while (endTime < startTime + 10000) {
-      endTime = new Date().getTime();
-    }
+    setTimeout(() => {
+      // simulate code to block main thread for 10 seconds
+      let startTime = new Date().getTime();
+      let endTime = startTime;
+      while (endTime < startTime + 10000) {
+        endTime = new Date().getTime();
+      }
 
-    const tenSecondsEndDiv = document.createElement("div");
-    tenSecondsEndDiv.innerHTML = "Ten Seconds Main Thread Blocking End";
-    document.querySelector(".tenSecondsEndDiv").appendChild(tenSecondsEndDiv);
+      const tenSecondsEndDiv = document.createElement("div");
+      tenSecondsEndDiv.innerHTML = "Ten Seconds Main Thread Blocking End";
+      document.querySelector(".tenSecondsEndDiv").appendChild(tenSecondsEndDiv);
 
-    const endDiv = document.createElement("div");
-    endDiv.innerHTML = "End";
-    document.querySelector(".end").appendChild(endDiv);
+      const endDiv = document.createElement("div");
+      endDiv.innerHTML = "End";
+      document.querySelector(".end").appendChild(endDiv);
+    }, 0);
   }, []);
 
   return (
